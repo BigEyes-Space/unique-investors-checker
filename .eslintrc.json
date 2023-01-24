@@ -1,0 +1,28 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended", "plugin:jest/recommended", "plugin:security/recommended"],
+  "plugins": ["jest", "security", "prettier", "import"],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "no-console": "error",
+    "func-names": "off",
+    "no-underscore-dangle": "off",
+    "consistent-return": "off",
+    "jest/expect-expect": "off",
+    "security/detect-object-injection": "off",
+    "global-require": "off",
+    "no-unused-vars": ["error", {"args": "none"}],
+    "camelcase": "off",
+    "max-len": ["error", { "code": 100 }],
+    "quotes": ["error", "single"],
+    "sort-imports": 0,
+    "import/order": [2, { "alphabetize": { "order": "asc" } }],
+    "semi": ["error", "never"],
+    "comma-dangle": ["error", "never"]
+  }
+}
